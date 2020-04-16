@@ -1,0 +1,100 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(./bg.jpg);
+
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    background-color: chartreuse;
+    position: relative;
+    top: -66px;
+}
+
+td{
+    border: 2px solid black;
+    width: 65px;
+}
+
+sup{
+    position: relative;
+    left: 4px;
+}
+
+.super{
+    position: relative;
+    top: -8px;
+}
+
+#first{
+    position: relative;
+    top: -497px;
+    left: 1235px;
+}
+
+.second{
+    position: relative;
+    top: -497px;
+    left: 871px;
+}
+
+.third{
+    position: relative;
+    top: -497px;
+    left: 872px;
+}
+
+#second-table{
+    position: relative;
+    top: -73px;
+    left: 240px;
+}
+
+table{
+    position: relative;
+    top: -69px;
+    left: 95px;
+}
+
+.H{
+    background-color: #c55e32;   
+}
+
+.Li{
+    background-color: #69417b;
+}
+
+.Be{
+    background-color: #246295;
+}
+
+.Sc{
+    background-color: #60a352;
+}
+
+.Ga{
+    background-color: #d8c520;
+}
+
+.Ge{
+    background-color: #D1922E;
+}
+
+.Br{
+    background-color: #C0343D;
+}
+
+.Ar{
+    background-color:#8B2533;
+}
+
+.La{
+    background-color: #74ACC2;
+}
+
+.Ac{
+    background-color: #2C9F7E;
+}
