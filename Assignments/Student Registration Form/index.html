@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./index.css" type="text/css"/>
+</head>
+<body>
+    <img id="logo" src="./images/Saylani-logo.png" alt="Logo" />
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <div>
+    <form>
+        <br />
+        <label>&nbsp; FIRST NAME</label>
+        <input type="input" placeholder="Enter first name" id="firstName"/>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  (max 30 characters a-z and A-Z)</label>
+        <br />
+        <br />
+        <label>&nbsp; LAST NAME</label>
+        <input type="input" placeholder="Enter last name" id="lastName"/>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(max 30 characters a-z and A-Z)</label>
+        <br />
+        <br /> 
+        <label>&nbsp; DATE OF BIRTH&nbsp; &nbsp; &nbsp;</label>
+        <select id="day">
+             <option>Day:</option>
+        </select>
+        <select id="month">
+            <option>Month:</option>
+        </select>
+        <select id="year">
+            <option>Year:</option>
+        </select>
+        <br />
+        <br /> 
+        <label>&nbsp; EMAIL ID</label>
+        <input type="input" placeholder="Enter email address " id="email"/>
+        <br />
+        <br /> 
+        <label>&nbsp; MOBILE NUMBER</label>
+        <input type="input" placeholder="Enter mobile number " id="mob-no"/>
+        <label>&nbsp; (10 digit number)</label>
+        <br />
+        <br /> 
+        <label>&nbsp; GENDER </label>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Male</label>
+        <input type="radio" value="male"/>
+        <label>Female</label>
+        <input type="radio" value="female"/>
+        <br />
+        <br />
+        <label id="address"> ADDRESS</label>
+        <textarea name="address"></textarea>
+        <br />
+        <br />
+        <label>&nbsp; CITY</label>
+        <input type="input" placeholder="Enter city name" id="cityName"/>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (max 30 characters a-z and A-Z)</label>
+        <br />
+        <br />
+        <label>&nbsp; PIN CODE</label>
+        <input type="input" placeholder="Enter pincode" id="pincode"/>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (6 digit number)</label>
+        <br />
+        <br />
+        <label>&nbsp; STATE</label>
+        <input type="input" placeholder="Enter state" id="state"/>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(max 30 characters a-z and A-Z)</label>
+        <br />
+        <br />
+        <label>&nbsp; COUNTRY</label>
+        <input type="input" placeholder="Enter country" id="country"/>
+        <br />
+        <br />
+        <label>&nbsp; HOBBIES</label>
+        <label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Drawing</label>
+        <input type="checkbox" value="drawing">
+        <label> &nbsp; Singing</label>
+        <input type="checkbox" value="singing">
+        <label> &nbsp; Dancing</label>
+        <input type="checkbox" value="dancing">
+        <label> &nbsp; Sketching</label>
+        <input type="checkbox" value="sketching">
+        <br />
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Others</label>
+        <input type="checkbox" value="dancing">
+        <input type="input" id="other"/>
+        <br />
+        <br />
+        <label> &nbsp; QUALIFICATION</label>
+        <label> &nbsp; &nbsp; Sl.No.Examination</label>
+        <label id="board"> Board</label>
+        <label id="percentage"> Percentage</label>
+        <label id="year-o-p"> Year of Passing</label>
+        <ol>
+            <li id="class-x">Class X
+                <input type="input" class="input-x"/>
+                <input type="input" class="input-x"/>
+                <input type="input" class="input-x"/>
+            </li>
+            <li id="class-xii">Class XII
+                <input type="input" class="input-xii"/>
+                <input type="input" class="input-xii"/>
+                <input type="input" class="input-xii"/>
+            </li>
+            <li id="graduation">Graduation
+                <input type="input" class="input-graduation"/>
+                <input type="input" class="input-graduation"/>
+                <input type="input" class="input-graduation"/>
+            </li>
+            <li id="masters">Masters
+                <input type="input" class="input-masters"/>
+                <input type="input" class="input-masters"/>
+                <input type="input" class="input-masters"/>
+            </li>
+            <br />
+        </ol>
+        <label id="char10">(10 char max)</label>
+        <label id="decimal2">(upto 2 decimal)</label>
+        <br />
+        <label>&nbsp; COURSES <br />&nbsp; APPLIED FOR</label>
+        <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BCA</label>
+        <input type="radio" value="BCA"/>
+        <label>B.Com</label>
+        <input type="radio" value="B.Com"/>
+        <label>B.Sc</label>
+        <input type="radio" value="B.Sc"/>
+        <label>B.A</label>
+        <input type="radio" value="B.Com"/>
+        <br />
+        <br />
+        <br />
+        <button><a href="./submit.html">Submit</a></button>
+        <button>Reset</button>
+        <br />
+    </form>
+</div>
+</body>
+</html>

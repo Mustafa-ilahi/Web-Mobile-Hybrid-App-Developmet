@@ -1,0 +1,23 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    position: relative;
+    top: 100px;
+    left: 652px;
+}
+
+h1{
+    color: #1E9852;
+    position: relative;
+    top: 66px;
+    text-align: center;
+}
+
+h2{
+    color: #7210bb;
+    position: relative;
+    top: 66px;
+    left: 551px;
+}

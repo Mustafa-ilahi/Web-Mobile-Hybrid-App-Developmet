@@ -1,0 +1,164 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    position: relative;
+    left: 558px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+
+div{
+    background-color:  #6B5ACD;
+    color: white;
+}
+
+#firstName{
+    position: relative;
+    left: 50px;
+}
+
+#lastName{
+    position: relative;
+    left: 56px;
+}
+
+#email{
+    position: relative;
+    left: 77px;
+}
+
+#mob-no{
+    position: relative;
+    left: 13px;
+}
+
+#address{
+    position: relative;
+    top: -43px;
+    left: 10px;
+}
+
+textarea{
+    position: relative;
+    left: 68px;
+    height: 58px;
+    width: 279px;
+}
+
+#cityName{
+    position: relative;
+    left: 97px;
+}
+
+#pincode{
+    position: relative;
+    left: 57px;
+}
+
+#state{
+    position: relative;
+    left: 84px;
+}
+
+#country{
+    position: relative;
+    left: 56px;
+}
+
+#other{
+    position: relative;
+    left: -2px;
+}
+
+#class-x{
+    position: relative;
+    left: 133px;
+    top: 4px;
+}
+
+.input-x{
+    position: relative;
+    left: 37px;
+}
+
+.input-xii{
+    position: relative;
+    left: 28px;
+}
+
+#class-xii{
+    position: relative;
+    left: 133px;
+    top: 7px;
+}
+
+#graduation{
+    position: relative;
+    left: 133px;
+    top: 12px;
+}
+
+.input-graduation{
+    position: relative;
+    left: 14px;
+}
+
+#masters{
+    position: relative;
+    left: 133px;
+    top: 12px;
+}
+
+.input-masters{
+    position: relative;
+    left: 34px;
+    top: 4px;
+}
+
+#board{
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
+#percentage{
+    position: relative;
+    top: 10px;
+    left: 118px;
+}
+
+#year-o-p{
+    position: relative;
+    top: 10px;
+    left: 166px;
+}
+
+#char10{
+    position: relative;
+    left: 294px;
+    top: -20px;
+}
+
+#decimal2{
+    position: relative;
+    left: 337px;
+    top: -20px;
+}
+
+button{
+    position: relative;
+    left: 389px;
+    top: -13px;
+}
