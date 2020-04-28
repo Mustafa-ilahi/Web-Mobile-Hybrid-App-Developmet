@@ -1,17 +1,110 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 #top{
     background-color: #316dc3;
     position: relative;
-    top: -16px;
+    top: -1px;
     left: -8px;
-    width: 1535px;
-}
+    width: 1543px;
+    height: 63px;
+}   
+
 
 #head-para{
-    text-align: center;
     color: white;
+    text-align: center;
+    position: relative;
+    top: -34px;
+}
+
+/* #whatsapp-logo{
+    position: relative;
+    top: 5px;
+    left: 173px;
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+
+} */
+
+i{
+    padding-left: 27px;
+    position: relative;
+    left: 173px;
+
+}
+
+.top-button{
+    position: relative;
+    top: -73px;
+    left: 1127px;
+    border: 1px solid #427900;
+    font-size: 13px;
+    color: #427900;
+    height: 30px;
+    cursor: pointer;
+    width: 91px;
+}
+
+ul{
+    position: relative;
+    left: 602px;
+
+}
+
+.home-button{
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    background-color: #316dc3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.media-btn{
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    background-color: #F7F8FA;
+    color:rgba(0,0,0,.5);
+}
+
+.media-btn:hover{
+    background-color: #316dc3;
+    color: white;   
+}
+
+#navbarDropdownMenuLink{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#navbarDropdownMenuLink:hover{
+     background-color: #316dc3;
+     color: white; 
+}
+
+#saylani-logo{
+    height: 59px;
+    position: relative;
+    left: 163px;
+}
+nav{
+    background-color: #F7F8FA;
+    /* position: fixed; */
+    box-shadow: 10px 10px 10px #F7F8FA;
+}
+
+#navbar{
+    /* position: fixed; */
+    background-color: #F7F8FA;
+    box-shadow: 10px 10px 10px #F7F8FA;
+    width: 1523px;
 }
