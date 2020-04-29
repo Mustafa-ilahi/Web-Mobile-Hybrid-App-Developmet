@@ -51,8 +51,7 @@ i{
 
 ul{
     position: relative;
-    left: 602px;
-
+    left: 523px;
 }
 
 .home-button{
@@ -72,7 +71,7 @@ ul{
     border: none;
     cursor: pointer;
     background-color: #F7F8FA;
-    color:rgba(0,0,0,.5);
+    color:black;
 }
 
 .media-btn:hover{
@@ -84,6 +83,7 @@ ul{
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    color:black;
 }
 
 #navbarDropdownMenuLink:hover{
@@ -99,12 +99,37 @@ ul{
 nav{
     background-color: #F7F8FA;
     /* position: fixed; */
-    box-shadow: 10px 10px 10px #F7F8FA;
+    /* box-shadow: 10px 10px 10px #F7F8FA; */
 }
 
 #navbar{
-    /* position: fixed; */
     background-color: #F7F8FA;
-    box-shadow: 10px 10px 10px #F7F8FA;
     width: 1523px;
 }
+
+#text{
+    background-color: #316DC3;
+    height: 25px;
+    width: 900px;
+    position: relative;
+    left: 285px;
+    top: 11px;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+}
+
+#movable-para{
+    position: absolute;
+    white-space: nowrap;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+@-webkit-keyframes floatText{
+    from {
+      left: 00%;
+    }
+  
+    to {
+      /* left: auto; */
+      left: 100%;
+    }
+  }
