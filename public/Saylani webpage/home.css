@@ -1,6 +1,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
     /* background-color: #fff; */
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #top{
@@ -104,7 +106,7 @@ nav{
 
 #navbar{
     background-color: #F7F8FA;
-    width: 1523px;
+    width: 1530px;
 }
 
 #text{
@@ -133,3 +135,41 @@ nav{
       left: 100%;
     }
   }
+
+.date{
+    color: #0bdf2b;
+}
+
+.white-text{
+    color: white;
+}
+
+.more-details{
+    color: blue;
+    cursor: pointer;
+}
+
+#intro-heading{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#intro-log{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.green{
+    color: #427900;
+}
+
+.blue{
+    color: #316dc3;
+}
+
+.para{
+    text-align: center;
+}
