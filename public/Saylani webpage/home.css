@@ -1,8 +1,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
     /* background-color: #fff; */
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+    /* background-color: #f7f8fa !important; */
 }
 
 #top{
@@ -20,6 +21,7 @@ body{
     text-align: center;
     position: relative;
     top: -34px;
+    
 }
 
 /* #whatsapp-logo{
@@ -109,32 +111,20 @@ nav{
     width: 1530px;
 }
 
-#text{
-    background-color: #316DC3;
-    height: 25px;
-    width: 900px;
-    position: relative;
-    left: 285px;
-    top: 11px;
-    /* text-overflow: ellipsis; */
-    overflow: hidden;
+.hh{
+    margin: 10px 60px;
+    padding: 3px;
+    height: 35px;
+    background-color: #316dc3;
+    font-size: 15px!important; 
+    color: white!important;
 }
-
-#movable-para{
-    position: absolute;
-    white-space: nowrap;
-    animation: floatText 5s infinite alternate ease-in-out;
+#da{
+    color: #0cdc2f ;
 }
-@-webkit-keyframes floatText{
-    from {
-      left: 00%;
-    }
-  
-    to {
-      /* left: auto; */
-      left: 100%;
-    }
-  }
+#de{
+    color: #0000ff;
+}
 
 .date{
     color: #0bdf2b;
@@ -171,5 +161,181 @@ nav{
 }
 
 .para{
-    text-align: center;
+    width: 60%;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666666;
+    font-family: sans-serif;
 }
+
+#logo-para{
+    background-color: #f7f8fa !important;
+    padding-top: 40px;
+    position: relative;
+    top: -20px;
+}
+
+#counter{
+    height: 300px;
+    background-color: #2755E9;
+    /* width: 100%; */
+}
+
+#dastarkhwan{
+    height: 40px;
+    position: relative;
+    left: 244px;
+    top: 66px;
+}
+
+#dastarkhwan-text{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: 72px;
+    left: 167px;
+    font-size: 50px;
+}
+
+#daily{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 72px;
+    left: 240px;
+}
+
+#dastra{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 72px;
+    left: 164px;
+}
+
+#monthly{
+    color: rgb(0, 255, 0);
+    font-size: 18px;
+}
+
+#family{
+    height: 40px;
+    position: relative;
+    left: 577px;
+    top: -95px;
+}
+
+#family-text{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: -92px;
+    left: 536px;
+    font-size: 50px;
+}
+
+#family-adopt{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: -94px;
+    left: 482px;
+}
+
+#medical{
+    height: 40px;
+    position: relative;
+    left: 889px;
+    top: -230px;
+}
+
+#medical-text{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: -229px;
+    left: 837px;
+    font-size: 50px;
+}
+
+#medi{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: -232px;
+    left: 831px;
+}
+
+#education{
+    height: 40px;
+    position: relative;
+    left: 1211px;
+    top: -369px;
+}
+
+#edu-text{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: -366px;
+    left: 1140px;
+    font-size: 50px;
+}
+
+#edu{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: -369px;
+    left: 1145px;
+}
+
+/* #all-divs{
+    background-color: #f7f8fa !important;
+    position: relative;
+    left: 43px;
+}
+
+#one,#two,#three,#four,#five,#six{
+    border: 2px solid red;
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
+    height: 180px;
+    width: 331px;
+    background-color: white;
+}
+
+#one{
+    position: relative;
+    left: 184px;
+}
+
+#two{
+    position: relative;
+    left: 549px;
+    top: -180px;
+}
+
+#three{
+    position: relative;
+    left: 914px;
+    top: -360px;
+}
+
+#four{
+    position: relative;
+    left: 184px;
+    top: -320px;
+}
+
+#five{
+    position: relative;
+    left: 549px;
+    top: -500px;
+}
+
+#six{
+     position: relative;
+    left: 914px;
+    top: -360px;
+} */
