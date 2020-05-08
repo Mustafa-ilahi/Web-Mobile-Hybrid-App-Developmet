@@ -2,7 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     /* background-color: #fff; */
     /* overflow-y: scroll; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* background-color: #f7f8fa !important; */
 }
 
@@ -116,9 +116,12 @@ nav{
     padding: 3px;
     height: 35px;
     background-color: #316dc3;
-    font-size: 15px!important; 
+    font-size: 15px!important;
     color: white!important;
+    position: relative;
+    top: -6px;
 }
+
 #da{
     color: #0cdc2f ;
 }
@@ -144,12 +147,16 @@ nav{
     text-align: center;
     font-family: serif;
     font-weight: bold;
+    position: relative;
+    top: -62px;
 }
 
 #intro-log{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -65px;
 }
 
 .green{
@@ -167,19 +174,24 @@ nav{
     font-size: 14px;
     color: #666666;
     font-family: sans-serif;
+    position: relative;
+    top: -52px;
+
 }
 
 #logo-para{
     background-color: #f7f8fa !important;
-    padding-top: 40px;
+    padding-top: 28px;
     position: relative;
-    top: -20px;
+    top: -58px;
+    height: 590px;
 }
 
 #counter{
     height: 300px;
     background-color: #2755E9;
-    /* width: 100%; */
+    position: relative;
+    top: -56px;
 }
 
 #dastarkhwan{
@@ -290,9 +302,26 @@ nav{
     top: -369px;
     left: 1145px;
 }
+.box,#bg-color{
+    background-color: #f7f8fa;
+}
+
+#bg-color{
+    position: relative;
+    top: -54px;
+}
 
 .box-part{
     box-shadow: 0 1px 6px rgb(0, 0, 0);
+    text-align: center!important;
+    position: relative;
+    top: -75px;
+    background-color: white;
+}
+
+#for-top{
+    position: relative;
+    top: -70px
 }
 
 .container-imgs{
@@ -359,6 +388,166 @@ nav{
     width: 260px;
     height: 205px;
     position: relative;
-    top: -340px;
+    top: -415px;
     left: 975px;
+
+}
+
+
+#img-gallery{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    margin-top: -203px;
+    position: relative;
+    top: -73px;
+}
+
+#logo-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -63px;
+}
+
+#images-gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.images{
+    height: 150px;
+    width: 235px;
+    margin: 1px;
+    padding-top: -16px;
+    position: relative;
+    top: -18px;
+}
+
+footer{
+    background-color: #25272E;
+    height: 340px;
+    color: #bbbbbb;
+}
+
+#footer-para{
+    margin-left: 175px;
+    padding-top: 75px;
+}
+
+#contact-no{
+    list-style-type: none;
+    position: relative;
+    left: 144px;
+    top: 17px;
+}
+
+#i-contact{
+    color: green;
+    margin-left: -188px;
+    position: relative;
+    top: 2px;
+
+}
+
+.list{
+    margin-left: 29px;
+    position: relative;
+    top: -23px;
+}
+
+#icons{
+    list-style-type: none;
+    position: relative;
+    top: -167px;
+    left: 137px;
+}
+
+.left-side-item{
+    position: relative;
+    top: -143px;
+    left: 205px;
+}
+
+#left-side-icon{
+    list-style-type: none;
+    position: relative;
+    left: 333px;
+    top: -300px;
+    color: green;
+}
+
+#useful-links{
+    position: relative;
+    color: white !important;
+    top: -428px;
+    left: 624px;
+    font-size: 14px;
+}
+
+#line-img-footer{
+    /* position: relative;
+    top: -442px;
+    left: 624px; */
+    width: 360px;
+}
+
+#uper-aja{
+    position: relative;
+    top: -425px;
+    left: 542px;
+    color: white !important;
+    width: 360px;
+}
+
+#contact-with-us{
+    position: relative;
+    color: white !important;
+    top: -34px;
+    left: 1px;
+    font-size: 14px;
+}
+
+#contact-icon{
+    position: relative;
+    top: -471px;
+    list-style-type: none;
+    left: 1041px;
+}
+
+#social-icon-1{
+    position: relative;
+    top: -24px;
+    left: 46px;
+}
+
+#social-icons-2{
+    position: relative;
+    top: -48px;
+    left: 98px;
+}
+
+
+#social-icons-3{
+    position: relative;
+    top: -73px;
+    left: 154px;
+}
+
+#bottom-div{
+    background-color: #316dd9;
+    list-style-type: none;
+    position: relative;
+    top: -347px;
+    height: 40px;
+    font-size: 11px;
+    color: white;
+}
+
+#bottom-text{
+    position: relative;
+    top: 9px;
+    left: 150px;
 }
