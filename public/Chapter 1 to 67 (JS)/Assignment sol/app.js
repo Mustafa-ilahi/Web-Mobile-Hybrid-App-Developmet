@@ -524,10 +524,52 @@
 
 
 // Q4
-var userInput = prompt("Enter a character").toLowerCase();
-if(userInput == "a" || userInput == "e" || userInput == "i" || userInput == "o" || userInput == "u"){
-    alert(userInput + " True it's vowel");
-}
-else{
-    alert(userInput + " False it's not vowel");
-}
+// var userInput = prompt("Enter a character").toLowerCase();
+// if(userInput == "a" || userInput == "e" || userInput == "i" || userInput == "o" || userInput == "u"){
+//     alert(userInput + " True it's vowel");
+// }
+// else{
+//     alert(userInput + " False it's not vowel");
+// }
+
+
+// Q5
+// var correctPass = prompt(" Please enter your password");
+// var confirmPass = prompt("Enter again password to verify");
+
+// if(correctPass == confirmPass){
+//     alert("Correct! The password you entered matches the original password");
+// }
+// else{
+//     alert("Incorrect password")
+// }
+
+
+// Q6
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//     alert("Good day");
+// }
+// else{
+//     alert("Good evening");
+// }
+
+
+// Q7
+// var userInput = +prompt("Enter time in 24 hours Clock format");
+// if(userInput >= 0000 && userInput < 1200){
+//     alert("Good Morning");
+// }
+// else if(userInput >=1200 && userInput < 1700){
+//     alert("Good afternoon");
+// }
+// else if(userInput >= 1700 && userInput < 2100){
+//     alert("Good evening");
+// }
+// else if(userInput >= 2100 && userInput <= 2359){
+//     alert("Good night");
+// }
+
+
+// Chapter 14-16
