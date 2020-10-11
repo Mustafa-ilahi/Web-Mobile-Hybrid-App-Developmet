@@ -1,0 +1,14 @@
+form{
+    position: relative;
+    left: 90px;
+}
+
+#send-btn{
+    position: relative;
+    left: 90px;
+}
+
+body{
+    background-color:  #56afd5;
+    color: whitesmoke;
+}

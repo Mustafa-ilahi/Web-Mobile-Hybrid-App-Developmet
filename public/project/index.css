@@ -1,0 +1,92 @@
+#all-components{
+    top: -4px;
+    color: #56afd5;
+    /* padding: 20px; */
+    position: relative;
+    left: 665px;
+}
+
+#all-components:hover{
+    color: white;
+    background-color: #438cab;
+}
+
+#logo-img{
+    height: 145px;
+    width: 284px;
+    position: relative;
+    left: 84px;
+}
+
+#bg-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20px;
+    width: 1420px;
+}
+
+#container{
+    background-color: #545559;
+    height: 200px;
+    width: 1420px;
+    position: relative;
+    top: -221px;
+    left: 58px;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#main-para{
+    font-size: 24px;
+}
+
+#second-container{
+    background-color: #018BBA;
+    position: relative;
+    top: -269px;
+    height: 140px;
+    color: white;
+    text-transform: capitalize;
+
+}
+
+#second-para{
+    font-size: 20px;
+}
+
+#book-now-btn{
+    color: white;
+    background-color: #438cab;
+    border: none;
+    position: relative;
+    left: 1175px;
+    top: -73px;
+    padding: 12px;
+    width: 135px;
+}
+
+#book-now-btn:hover{
+    color: #56afd5;
+    background-color: white; 
+    cursor: pointer;
+}
+
+#class-btn{
+    color: white;
+    background-color: #438cab;
+    border: none;
+    padding: 12px;
+    width: 135px;
+    cursor: pointer;
+    position: relative;
+    top: -276px;
+    left: 702px;
+}
+
+body{
+    overflow: hidden;
+}
