@@ -622,69 +622,22 @@
 
 
 // Q9
-// var colorNames = ["red","blue","green","yellow","orange"];
-// var begColor = prompt("what color you wants to add in a color array : ");
-// document.write("The updated array list is(Color add in Beginning): "+(colorNames.unshift(begColor)));
-// document.write("<br />");
-// document.write(colorNames);
-// document.write("<br />");
-// document.write("<br />");
-// var endColor = prompt("what color you wants to add at last in a color array : ");
-// document.write("The updated array list is(Color add in Ending): "+(colorNames.push(endColor)));
-// document.write("<br />");
-// document.write(colorNames);
-// document.write("<br />");
-// document.write("The updated array list is(Add two colors in Beginning): "+(colorNames.unshift("black")));
-
-    // OLDDDDDDD solution
-
-// var color = prompt("what color you wants to add in a color array : ");
-// document.write("The updated array list is(Color add in Beginning): "+(colourNames.unshift(color)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// var colorr = prompt("what color you wants to add at last in a color array : ");
-// document.write("The updated array list is(Color add in Beginning): "+(colourNames.push(colorr)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// var colorrr = prompt("what color you wants to add in a beginning color array : ");
-// var colorrrr = prompt("Add one more color please : ");
-// document.write("The updated array list is(Color add in Beginning): "+(colourNames.unshift(colorrr,colorrrr)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// alert("deleted from beginning item is :");
-// document.write("The updated array list is(Color delelte in Beginning): "+(colourNames.shift(colorrrr)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// alert("deleted from last item is :");
-// document.write("The updated array list is(Color delelte in last): "+(colourNames.pop(colorrrr)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// var AddRandomColor = prompt("Which position you wants to add a colorName : ");
-// var Colors = prompt("what color you wants to add : ");
-// document.write("Randomly Add color is : "+(colourNames.splice(AddRandomColor,"0",Colors)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-// var delColor = prompt("Which position you wants to delete a colorName : ");
-// var colordell = prompt("how many colors you wants to delete : ");
-// document.write("deleting color is : "+(colourNames.splice(delColor,colordell,0)));
-// document.write("<br />");
-// document.write(colourNames);
-// document.write("<br />");
-// document.write("<br />");
-
-
+var myArray = ["red","green","blue"];
+document.write("Orignal Array: " + myArray + "<br/>");
+var userBegColor = prompt("Enter color to add in the beginning of the array");
+document.write(myArray.unshift(userBegColor)," Add Beginning of an Array: " + myArray + "<br/>");
+var userEndColor = prompt("Enter color to add in the end of the array");
+document.write(myArray.push(userEndColor)," Add Ending of an Array: " + myArray + "<br/>");
+var oneColor = prompt("Add one color in the begining of an Array");
+document.write(myArray.unshift(oneColor)," Add Beginning of an Array: " + myArray + "<br/>");
+var twoColor = prompt("Add one more color in the begining of an Array");
+document.write(myArray.unshift(twoColor)," Add Beginning of an Array: " + myArray + "<br/>");
+document.write(myArray.shift() + " Delete first element of an Array: " + myArray + "<br/>");
+var indexNumInsert = +prompt("Enter index num for inserting");
+var colorName = prompt("Enter color name");
+document.write(myArray.splice(indexNumInsert,0,colorName) + " Updated: " + myArray + "<br/>");
+var indexNumDelete = +prompt("Enter index num for delete");
+document.write(myArray.splice(indexNumDelete) + " Deleted: " + myArray + "<br/>")
 
 // Q10
 // var array = [320,230,480,120];
