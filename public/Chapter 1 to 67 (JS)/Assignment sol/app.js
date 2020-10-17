@@ -801,3 +801,22 @@
 // }
 
 
+// Chapter 21-25
+
+// Q1   
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// alert("Welcome...! " + firstName + " " + lastName);
+
+
+// Q2
+// var mobModel = prompt("Enter your favourite mobile phone model");
+// document.write("My favourite phone is: " + mobModel + "<br/>");
+// document.write("Length of string: " +mobModel.length)
+
+
+
+// Q3
+// var string = prompt("Enter String");
+// document.write("String: " + string + "<br/>");
+// document.write("Index of 'n': " + string.indexOf('n'));
