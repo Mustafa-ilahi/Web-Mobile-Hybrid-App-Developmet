@@ -622,25 +622,182 @@
 
 
 // Q9
-var myArray = ["red","green","blue"];
-document.write("Orignal Array: " + myArray + "<br/>");
-var userBegColor = prompt("Enter color to add in the beginning of the array");
-document.write(myArray.unshift(userBegColor)," Add Beginning of an Array: " + myArray + "<br/>");
-var userEndColor = prompt("Enter color to add in the end of the array");
-document.write(myArray.push(userEndColor)," Add Ending of an Array: " + myArray + "<br/>");
-var oneColor = prompt("Add one color in the begining of an Array");
-document.write(myArray.unshift(oneColor)," Add Beginning of an Array: " + myArray + "<br/>");
-var twoColor = prompt("Add one more color in the begining of an Array");
-document.write(myArray.unshift(twoColor)," Add Beginning of an Array: " + myArray + "<br/>");
-document.write(myArray.shift() + " Delete first element of an Array: " + myArray + "<br/>");
-var indexNumInsert = +prompt("Enter index num for inserting");
-var colorName = prompt("Enter color name");
-document.write(myArray.splice(indexNumInsert,0,colorName) + " Updated: " + myArray + "<br/>");
-var indexNumDelete = +prompt("Enter index num for delete");
-document.write(myArray.splice(indexNumDelete) + " Deleted: " + myArray + "<br/>")
+// var myArray = ["red","green","blue"];
+// document.write("Orignal Array: " + myArray + "<br/>");
+// var userBegColor = prompt("Enter color to add in the beginning of the array");
+// document.write(myArray.unshift(userBegColor)," Add Beginning of an Array: " + myArray + "<br/>");
+// var userEndColor = prompt("Enter color to add in the end of the array");
+// document.write(myArray.push(userEndColor)," Add Ending of an Array: " + myArray + "<br/>");
+// var oneColor = prompt("Add one color in the begining of an Array");
+// document.write(myArray.unshift(oneColor)," Add Beginning of an Array: " + myArray + "<br/>");
+// var twoColor = prompt("Add one more color in the begining of an Array");
+// document.write(myArray.unshift(twoColor)," Add Beginning of an Array: " + myArray + "<br/>");
+// document.write(myArray.shift() + " Delete first element of an Array: " + myArray + "<br/>");
+// var indexNumInsert = +prompt("Enter index num for inserting");
+// var colorName = prompt("Enter color name");
+// document.write(myArray.splice(indexNumInsert,0,colorName) + " Updated: " + myArray + "<br/>");
+// var indexNumDelete = +prompt("Enter index num for delete");
+// var elements = +prompt("Enter elements how many you want to remove");
+// document.write(myArray.splice(indexNumDelete,elements) + " Deleted: " + myArray + "<br/>")
+
 
 // Q10
 // var array = [320,230,480,120];
 // document.write("Scores of Students: " + array + "<br/>");
 // document.write("Order Scores of Students: " + array.sort());
+
+
+// Q11
+// var city = ["Karachi","Lahore","Islamabad", "Quetta","Peshawar"];
+// document.write("Cities List:" + "<br/>" + city + "<br/>")
+// var selectedCities = city.slice(2,4);
+// document.write("Selected cities list: " + "<br/>" + selectedCities);
+
+
+// Q12
+// var array =  ["This" , " is ", " my ", " cat"];
+// document.write("Array: " + array + "<br/>");
+// var string = array.join(" ");
+// document.write("String: " + string);
+
+
+
+//Q13
+// var devices = ["keyboard","mouse","printer","monitor"];
+// document.write("Devices: " + "<br/>" + devices + "<br/>")
+// for(var i=0; i<devices.length; i++){
+//     document.write("Out: "  + "<br/>" + devices[i] + "<br/>");
+// } 
+
+
+// Q14
+// var devices = ["keyboard","mouse","printer","monitor"];
+// document.write("Devices: " + "<br/>" + devices + "<br/>")
+// for(var i=devices.length-1; i>=0; i--){
+//     document.write("Out: "  + "<br/>" + devices[i] + "<br/>");
+// } 
+
+
+// Q15
+// var array = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+// document.write("<select>");
+// for(var i=0; i<array.length; i++){
+//     document.write("<option>" + array[i] + "</br>" + "</option>");
+// }
+// document.write("</select>");
+
+
+
+// Chapter 17-20
+
+// Q1
+// var array = [[1,2],[2,3],[3,4]];
+
+
+//Q2
+// var array = [[0,1,2,3], [1,0,1,2],[2,1,0,1]];
+// for(var i=0; i<array.length; i++){
+//     document.write(array[i].join(" ") + "<br/>");
+// } 
+
+
+// Q3
+// for(var i=1; i<=10; i++){
+//     document.write(i + "<br/>");
+// }
+
+
+// Q4
+// var tableNum = +prompt("Enter number to print table");
+// var length = +prompt("Enter length of table");
+// for(var i=1; i<=length; i++){
+//     document.write(tableNum + " * " +  i + " = " + tableNum * i  + "<br/>");
+// }
+
+
+// Q5
+// var fruit = ["apple", "banana", "mango", "orange","strawberry"];
+// for(var i=0; i<fruit.length; i++){
+//     document.write(fruit[i] + "<br/>");
+// }
+// for(var j=0; j<fruit.length; j++){
+//     document.write("Element at index " + fruit.indexOf(fruit[j]) +  " " + fruit[j] + "<br/>");
+// }
+
+
+// Q6
+// a COUNTING
+// document.write("<h3>" + "Counting:" + "</h3>");
+// for(var i=1; i<16; i++){
+//     document.write(i + ",");
+// }
+
+// b REVERSE COUNTING
+// document.write("<h3>" + "Reverse Counting:" + "</h3>");
+// for(var i=10; i>0; i--){
+//     document.write(i + ",");
+// }
+
+// c EVEN
+// document.write("<h3>" + "Even:" + "</h3>");
+// for(var i=0; i<21; i++){
+//     if(i%2 == 0){
+//         document.write(i + ",");
+//     }
+// }
+
+
+// d ODD
+// document.write("<h3>" + "Odd:" + "</h3>");
+// for(var i=0; i<21; i++){
+//     if(i%2 != 0){
+//         document.write(i + ",");
+//     }
+// }
+
+
+// e SERIES
+// document.write("<h3>" + "Series:" + "</h3>");
+// for(var i=2; i<21; i++){
+//     if(i%2 == 0){
+//         document.write(i + "k ,")
+//     }
+// }
+
+
+// Q7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userInput = prompt("Welcome to Jazzy Bakery. What do you want to order sir/ma'am?").toLowerCase();
+// var match = "no";
+// for(var i=0; i<A.length; i++){
+//     if(userInput === A[i]){
+//         match = "yes" 
+//         document.write(userInput + " is <b> available </b> at index " + A.indexOf(A[i]) + " in our bakery");
+//             break;
+//     }
+// }
+// if(match === "no"){
+//     document.write("We are sorry. " + userInput + "<b> is not available </b> in our bakery");   
+// }
+
+
+// Q8
+// var A =  [24, 53, 78, 91, 12];
+// document.write("Array items: " + A + "<br/>");
+// document.write("The largest number is " + Math.max(...A));  
+
+
+// Q9
+// var A =  [24, 53, 78, 91, 12];
+// document.write("Array items: " + A + "<br/>");
+// document.write("The smallest number is " + Math.min(...A));  
+
+
+// Q10
+// for(var i=5; i<=100; i++){
+//     if(i%5 == 0){
+//         document.write(i + ",");
+//     }
+// }
+
 
