@@ -820,3 +820,117 @@
 // var string = prompt("Enter String");
 // document.write("String: " + string + "<br/>");
 // document.write("Index of 'n': " + string.indexOf('n'));
+
+
+// Q4
+// var string = "Hello World"
+// document.write("String: " + string + "<br/>");
+// document.write("Index of 'l': " + string.lastIndexOf("l"));
+
+
+
+// Q5
+// var string = "Pakistani";
+// document.write(string + "<br/>");
+// document.write("Character at index 3: " + string.charAt(3));
+
+
+// Q6
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// var fullName = firstName.concat(lastName);
+// alert("Welcome...! " + fullName);
+
+
+// Q7
+// var word = "Hyderabad";
+// var newWord = word.replace("Hyder","Islam");
+// document.write("City: " + word + "<br/>");
+// document.write("After Replacement: " + newWord);
+
+
+
+// Q8
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+// var newMessage = message.replace("and","&");
+// var updatedMessage = newMessage.replace("and","&")
+// document.write("Orignal Message: " + message + "<br/>");
+// document.write("After Replacement: " + updatedMessage);
+
+
+// Q9
+// var string = "472";
+// document.write("Value: " + string + "<br/>");
+// document.write("Type: " + typeof(string) + "<br/>");
+// var num = parseInt(string);
+// document.write("Value: " + num + "<br/>");
+// document.write("Type: " + typeof(num));
+
+
+// Q10
+// var userInput = prompt("Enter string to convert into capital letter");
+// document.write("Userinput: " + userInput + "<br/>");
+// document.write("Upper case: " + userInput.toUpperCase());
+
+
+
+// Q11
+// var userInput = prompt("Enter string to convert into Title Case");
+// document.write("Userinput: " + userInput + "<br/>");
+// var titleCase = userInput.charAt(0).toUpperCase();
+// var remainingStr = userInput.slice(1);
+// document.write("Title case: " + titleCase + remainingStr);
+
+
+
+// Q12
+// var num = 35.36;
+// document.write("Number: " + num + "<br/>");
+// str = num.toString();
+// var result = str.replace(".","");
+// document.write("Result: " + result)
+
+
+// Q13
+// var userName = prompt("Enter username");
+// if(userName.includes("!") || userName.includes(",") || userName.includes(".") || userName.includes("@")){
+//     alert("Please Enter a valid username");
+// }
+// else{
+//     alert("it's valid name");
+// }
+
+
+
+// Q14
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userInput = prompt("Welcome to Jazzy Bakery. What do you want to order sir/ma'am?").toLowerCase();
+// var match = "no";
+// for(var i=0; i<A.length; i++){
+//     if(userInput === A[i]){
+//         match = "yes" 
+//         document.write(userInput + " is <b> available </b> at index " + A.indexOf(A[i]) + " in our bakery");
+//             break;
+//     }
+// }
+// if(match === "no"){
+//     document.write("We are sorry. " + userInput + "<b> is not available </b> in our bakery");   
+// }
+
+
+
+// Q15
+// var userInput = prompt("Enter password");
+// console.log(userInput);
+// var array = (userInput.split(""));
+// var array1 = array.split("");
+
+
+
+
+// Q16
+// var university = "University of Karachi";
+// for(var i=0; i<university.length; i++){
+//     document.write(university[i] + "<br/>")
+// }
+
