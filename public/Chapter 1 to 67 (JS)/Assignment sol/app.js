@@ -920,10 +920,24 @@
 
 
 // Q15
-// var userInput = prompt("Enter password");
-// console.log(userInput);
-// var array = (userInput.split(""));
-// var array1 = array.split("");
+// var userInput = prompt("Enter Password");
+// document.write("Entered Password: " + userInput + "<br/>");
+// if(userInput.charCodeAt(0)>=48 && userInput.charCodeAt(0)<=57){
+//     document.write("Password can't be starts with number" + "<br/>");
+//     document.write("Please enter a valid password")
+// }
+// else if(userInput.length<=6){
+//       alert("Invalid length");
+//     }
+// else if(userInput.includes("a") || userInput.includes("b") || userInput.includes("c")  || userInput.includes("d") || userInput.includes("e") || userInput.includes("f") || userInput.includes("g") || userInput.includes("h") || userInput.includes("i") || userInput.includes("j") || userInput.includes("k") || userInput.includes("b")|| userInput.includes("l") || userInput.includes("m") || userInput.includes("n") || userInput.includes("o") || userInput.includes("p") || userInput.includes("q") || userInput.includes("r") || userInput.includes("s") || userInput.includes("t") || userInput.includes("u") || userInput.includes("v") || userInput.includes("w") || userInput.includes("x") || userInput.includes("y") || userInput.includes("z") || userInput.includes("A")){
+//     if(userInput.includes(1) || userInput.includes(2) || userInput.includes(3) || userInput.includes(4) || userInput.includes(5)|| userInput.includes(6) || userInput.includes(7) || userInput.includes(8) || userInput.includes(9) || userInput.includes(0)){
+//         alert("Valid Password");
+//     }
+//     else{
+//         alert("Password must contain alphabets and numbers");
+//     }
+// }
+
 
 
 
@@ -934,3 +948,13 @@
 //     document.write(university[i] + "<br/>")
 // }
 
+
+
+// Q17
+// var userInput = prompt("Enter string");
+// document.write("User input: " + userInput + "<br/>");
+// document.write("Last character of input: " + userInput.charAt(userInput.length-1));
+
+
+
+// 
