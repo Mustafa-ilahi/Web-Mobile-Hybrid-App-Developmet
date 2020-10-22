@@ -957,4 +957,73 @@
 
 
 
-// 
+// Chapter 26-30
+
+// Q1
+// var num = prompt("Enter positive number");
+// document.write("Number:" + num + "<br/>");
+// document.write("Round off value:" + Math.round(num) + "<br/>");
+// document.write("Floor value:" + Math.floor(num) + "<br/>");
+// document.write("Ceil value:" + Math.ceil(num));
+
+
+// Q2
+// var num = prompt("Enter negative number");
+// document.write("Number:" + num + "<br/>");
+// document.write("Round off value:" + Math.round(num) + "<br/>");
+// document.write("Floor value:" + Math.floor(num) + "<br/>");
+// document.write("Ceil value:" + Math.ceil(num));
+
+
+// Q3
+// var num = prompt("Enter number");
+// if(num.startsWith("-")){
+//     document.write("The absolutely value of " + num + " is " + num.slice(1));
+// }
+
+
+// Q4
+// var diceNum = Math.random() * 6;
+// document.write("Random dice value: " + Math.ceil(diceNum));    
+
+
+
+// Q5
+// var diceNum = Math.random() * 2;
+// if(Math.ceil(diceNum)==1){
+//     document.write(Math.ceil(diceNum) + "<br/>");
+//     document.write("Random coin value: Heads");
+// }
+// else{
+//     document.write(Math.ceil(diceNum) + "<br/>");
+//     document.write("Random coin value: Tails");
+// }
+
+
+
+//Q6 
+// var diceNum = Math.random() * 100;
+// document.write("Random number between 1 and 100: " + Math.ceil(diceNum));    
+
+
+
+// Q7
+// var userInput = prompt("Enter your weight");
+// if(userInput.includes("kilograms") || userInput.includes("kgs")){
+//     document.write("The weight of user is " + userInput + "<br/>");
+// }
+// else{
+//     document.write("The weight of user is " + userInput + "kilograms");
+// }
+
+
+
+// Q8
+// var secretNum = Math.ceil(Math.random() * 10);
+// var userNum = prompt("Enter a number between 1-10");
+// if(userNum == secretNum){
+//     alert("Congratulation..!");
+// }
+// else{
+//     alert("Try again..!");
+// }
