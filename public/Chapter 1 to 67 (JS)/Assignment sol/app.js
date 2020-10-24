@@ -852,10 +852,10 @@
 
 // Q8
 // var message = "Ali and Sami are best friends. They play cricket and football together.";
-// var newMessage = message.replace("and","&");
-// var updatedMessage = newMessage.replace("and","&")
+// var newMessage = message.replace(/and/g,"&");
+// // var updatedMessage = newMessage.replace("and","&")
 // document.write("Orignal Message: " + message + "<br/>");
-// document.write("After Replacement: " + updatedMessage);
+// document.write("After Replacement: " + newMessage);
 
 
 // Q9
@@ -957,6 +957,16 @@
 
 
 
+// Q18
+// var string = "The quick brown fox jumps over the lazy dog";
+// count = (string.match(/the/g)).length;
+// count1 = (string.match(/The/g)).length;
+// var result =  count + count1;
+// document.write("Text: " + string + "<br/>");
+// document.write("There are " +  result + " occurenece(s) of word 'the' and 'The'.");
+
+
+
 // Chapter 26-30
 
 // Q1
@@ -1027,3 +1037,11 @@
 // else{
 //     alert("Try again..!");
 // }
+
+
+
+// Chapter 31-34
+
+// Q1
+// var date = new Date();
+// console.log(date.getTimezoneOffset())
