@@ -1042,6 +1042,236 @@
 
 // Chapter 31-34
 
+
 // Q1
 // var date = new Date();
-// console.log(date.getTimezoneOffset())
+// document.write(date);
+
+
+
+// Q2
+// var date = new Date();
+// var currentMonth = date.getMonth();
+// if(currentMonth == 0){
+//     alert("Current Month: January");
+// }
+// else if(currentMonth == 1){
+//     alert("Current Month: Feburary");
+// }
+// else if(currentMonth == 2){
+//     alert("Current Month: March");
+// }
+// else if(currentMonth == 3){
+//     alert("Current Month: April");
+// }
+// else if(currentMonth == 4){
+//     alert("Current Month: May");
+// }
+// else if(currentMonth == 5){
+//     alert("Current Month: June");
+// }
+// else if(currentMonth == 6){
+//     alert("Current Month: July");
+// }
+// else if(currentMonth == 7){
+//     alert("Current Month: August");
+// }
+// else if(currentMonth == 8){
+//     alert("Current Month: September");
+// }
+// else if(currentMonth == 9){
+//     alert("Current Month: October");
+// }
+// else if(currentMonth == 10){
+//     alert("Current Month: November");
+// }
+// else if(currentMonth == 11){
+//     alert("Current Month: December");
+// }
+
+
+
+// Q3
+// var date = new Date();
+// var currentDay = date.getDay();
+// if(currentDay == 0){
+//     alert("Today is: Sun");
+// }
+// else if(currentDay == 1){
+//     alert("Today is: Mon");
+// }
+// else if(currentDay == 2){
+//     alert("Today is: Tue");
+// }
+// else if(currentDay == 3){
+//     alert("Today is: Wed");
+// }
+// else if(currentDay == 4){
+//     alert("Today is: Thu");
+// }
+// else if(currentDay == 5){
+//     alert("Today is: Fri");
+// }
+// else if(currentDay == 6){
+//     alert("Today is: Sat");
+// }
+
+
+
+// Q4
+// var date = new Date();
+// var currentDay = date.getDay();
+// if(currentDay == 0){
+//     alert("It's Fun day");
+// }
+// else if(currentDay == 1){
+//     alert("Today is: Mon");
+// }
+// else if(currentDay == 2){
+//     alert("Today is: Tue");
+// }
+// else if(currentDay == 3){
+//     alert("Today is: Wed");
+// }
+// else if(currentDay == 4){
+//     alert("Today is: Thu");
+// }
+// else if(currentDay == 5){
+//     alert("Today is: Fri");
+// }
+// else if(currentDay == 6){
+//     alert("It's Fun day");
+// }
+
+
+
+//Q5
+// var date = new Date();
+// var currentDate = date.getDate();
+// if(currentDate<=15){
+//     alert("First fifteen days of month");
+// } 
+// else{
+//     alert("Last days of month");
+// }
+
+
+
+// Q6
+
+
+
+
+// Chapter 35-38
+// Q1
+// function currentDate(){
+//     var date = new Date();
+//     document.write(date);
+// }
+// currentDate();
+
+
+
+// Q2
+// var firstName = prompt("Enter First Name");
+// var lastName = prompt("Enter Last Name");
+// function fullName(firstName,lastName){
+    //     alert("Welcome..! " + firstName + lastName);
+    // }
+// fullName(firstName,lastName);
+
+
+
+// Q3
+// var num1 = +prompt("Enter First Number");
+// var num2 = +prompt("Enter Second Number");
+// function sum(num1,num2){
+//     var sum = num1 + num2
+//     alert("Sum is: " + sum);
+// }
+// sum(num1,num2)
+
+
+
+// Q4
+// var num1 = +prompt("Enter First Number");
+// var num2 = +prompt("Enter Second Number");
+// var operator = prompt("Enter operator e.g:+,-,*,/,%");
+// function Calculator(num1,num2,operator){
+//     if(operator == '+'){
+//         var sum = num1 + num2;
+//         alert("Sum is " + sum);
+//     }
+//     else if(operator == '-'){
+//         var sum = num1 - num2;
+//         alert("Subtraction is " + sum);
+//     }
+//     else if(operator == '*'){
+//         var sum = num1 * num2;
+//         alert("Multiplication is " + sum);
+//     }
+//     else if(operator == '/'){
+//         var sum = num1 / num2;
+//         alert("Division is " + sum);
+//     }
+//     else if(operator == '-%'){
+//         var sum = num1 % num2;
+//         alert("Modulus is " + sum);
+//     }
+//     else{
+//         alert("Invalid operator");
+//     }
+// }
+// Calculator(num1,num2,operator);
+
+
+
+
+// Q5
+// var num = +prompt("Enter a number");
+// function square(num){
+//     var square = Math.pow(num,2)
+//     alert("Square of: " + num + " is " + square);
+// }
+// square(num);
+
+
+
+// Q6
+// var num = +prompt("Enter a number");
+// function factorial(num){
+//     document.write("Factorial of " + num + "<br/>")
+//     for(var i=num; i>1; i--){
+//         if(num>1){
+//             document.write(num*i + "!" + "<br/>");
+//         }
+//     }
+// }
+// factorial(num);
+
+
+
+
+// Q7
+// var startNum = +prompt("Enter start number");
+// var LastNum = +prompt("Enter last number");
+// function counting(startNum,LastNum){
+//     for(var i=startNum; i<=LastNum; i++){
+//         console.log(i)
+//     }
+// }
+// counting(startNum,LastNum);
+
+
+
+
+//Q8
+// var base = prompt("Enter base");
+// var perpendicular = prompt("Enter perpendicular");
+// function calculateHypotenuse(perpendicular,base){
+//     var hypotenuse = perpendicular/base;
+//     document.write("Hypotenuse is: " + hypotenuse);
+//     function calculateSquare(){
+        
+//     }
+// } 
