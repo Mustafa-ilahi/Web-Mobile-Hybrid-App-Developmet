@@ -1162,6 +1162,7 @@
 
 
 
+
 // Chapter 35-38
 // Q1
 // function currentDate(){
@@ -1275,3 +1276,22 @@
         
 //     }
 // } 
+// incomplete
+
+
+
+// Q9
+// function area_Of_Rectangle(width,height){
+//     var area = width * height;
+//     document.write("Area of Rectangle is: " + area);
+// }
+// var height = +prompt("Enter Height");
+// var width = +prompt("Enter Width");
+
+// area_Of_Rectangle(450,200);
+// area_Of_Rectangle(width,height);
+
+
+
+
+// Q10
