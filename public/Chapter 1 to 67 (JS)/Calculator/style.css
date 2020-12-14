@@ -1,0 +1,21 @@
+.main{
+    border: 2px solid;
+    /* text-align: center; */
+    width: 250px;
+}
+input{
+    width: 240px;
+    height: 50px;
+    font-size: 25px;
+}
+button{
+    height: 61px;
+    width: 59px;
+    font-size: 16px;
+}
+.equal-btn{
+    width: 122px;
+}
+.clear-btn{
+    width: 248px;
+}
