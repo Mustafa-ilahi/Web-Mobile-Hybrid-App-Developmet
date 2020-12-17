@@ -1,8 +1,25 @@
 body{
     font-family: 'Times New Roman', Times, serif;
+    background-image: url("https://wallpapercave.com/wp/Pc08Mdb.png");
+}
+html{
+    box-shadow: 2px 5px 2px 5px black;
 }
 
 h1{
     text-align: center;
-
+    font-size: 50px;
+    color: darkslategray;
+    box-shadow: 2px 5px 2px 5px black;
+}
+a,li{
+    font-size: 20px;
+}
+a,li{
+    color: darkslategrey;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: lightyellow;
 }

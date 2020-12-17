@@ -8,10 +8,21 @@
 </head>
 <body>
     <div>
-        <h1>Stop Watch</h1>
+        <br>
+        <h1 id="main-head">Stop Watch</h1>
     </div>
     <div>
-
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+    </div>
+    <div>
+        <button id="start-btn" onclick="start()">Start</button>
+        <button id="stop-btn" onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <div>
+        <h1 class="colon"> : &nbsp; &nbsp; &nbsp;  :  &nbsp; &nbsp; &nbsp;</h1>
     </div>
     <script src="./app.js"></script>
 </body>

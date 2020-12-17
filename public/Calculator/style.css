@@ -1,8 +1,12 @@
+body{
+    background-image: url("./bg.jpg");
+}
 .main{
     border: 2px solid;
     /* text-align: center; */
     width: 250px;
     margin: 0 auto;
+    box-shadow: 2px 5px 2px 5px  #ffc500;
 }
 input{
     width: 240px;
@@ -13,6 +17,8 @@ button{
     height: 61px;
     width: 59px;
     font-size: 16px;
+    color: #ffc500;
+    background-color: black;
 }
 .equal-btn{
     width: 122px;
@@ -22,4 +28,10 @@ button{
 }
 h1{
     text-align: center;
+    color: #ffc500;
+}
+input{
+    background-color: gray;
+    color: black;
+    box-shadow: 2px 5px 2px 5px  #ffc500;
 }

@@ -1,3 +1,36 @@
 body{
     text-align: center;
+    background-image: url("./images/bg.png");
+    overflow: hidden;
+}
+#min,#sec,#msec{
+    display: inline-block;
+    width: 200px;
+    color: #ffffff;
+    font-size: 120px;
+    position: relative;
+    top: -72px;
+}
+#main-head{
+    font-size: 100px;
+    color: #ffffff;
+}
+.colon{
+    left: 73px;
+    font-size: 100px;
+    color: #ffffff;
+    position: relative;
+    top: -436px;
+}
+button{
+    font-size: 40px;
+    border-radius: 100px;
+    padding: 15px 32px;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 2px 2px gray; 
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: #ffffff;
 }
