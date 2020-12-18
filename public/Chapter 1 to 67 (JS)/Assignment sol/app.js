@@ -1295,3 +1295,18 @@
 
 
 // Q10
+// var userInput = prompt("Enter String to check it's palindrome or not");
+// var str = "";
+// for(var i=userInput.length-1; i>=0; i--){
+//     str += userInput[i];
+// }
+// if(str == userInput){
+//     alert(userInput + " is palindrome");
+//     }
+//     else{
+//         alert(userInput + " isn't palindrome");
+//     }
+
+
+
+//Q11
