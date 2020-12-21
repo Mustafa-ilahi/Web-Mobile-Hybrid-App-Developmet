@@ -1,0 +1,43 @@
+body{
+    /* background: linear-gradient(144deg, #5786ff 0%, #5ce6c9 95%); */
+    background-image: url("https://cdn.wallpapersafari.com/6/95/RQAbOu.jpg");
+}
+input{
+    font-size: 30px;
+    border: 6px solid black;    
+    border-radius: 12%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gray;
+    color: honeydew;
+}
+input::placeholder{
+    color: honeydew;
+}
+h1,div{
+    text-align: center;
+}
+ul{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: honeydew;
+    list-style-position: inside;
+}
+button{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px; 
+    width: 205px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: gray;
+}
+
+#editBtn,#delBtn{
+    position: relative;
+    left: 20px;
+}
