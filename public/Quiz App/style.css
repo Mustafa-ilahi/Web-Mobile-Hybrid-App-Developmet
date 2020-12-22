@@ -1,5 +1,5 @@
 body {
-    background-color: #616161
+    background-color: black
 }
 
 label.btn {
@@ -136,4 +136,16 @@ label .glyphicon {
 
 .modal-body {
     min-height: 300px
+}
+button{
+    background-color: #ac2925;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color: black;
+    color: #ac2925;
+    border: 2px solid #ac2925;
 }
