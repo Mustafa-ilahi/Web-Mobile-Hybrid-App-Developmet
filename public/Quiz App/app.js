@@ -1,8 +1,12 @@
-var totalMarks = [];
 function question1(){
     var q1_correctAns = document.getElementById("q1-correctAns");
     if(q1_correctAns.checked == true){
         alert("Correct ans!");
+        // var q1marks = document.getElementById("q1");
+        // var li = document.createElement("li");
+        // var text = document.createTextNode(q1_correctAns.value);
+        // li.appendChild(text);
+        // q1marks.appendChild(li);
     }
     else{
         alert("Wrong ans")
@@ -98,4 +102,3 @@ function question10(){
         alert("Wrong ans")
     }
 }
-
