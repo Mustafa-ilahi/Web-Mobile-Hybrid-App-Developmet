@@ -1,3 +1,4 @@
+var totalMarks = [];
 function question1(){
     var q1_correctAns = document.getElementById("q1-correctAns");
     if(q1_correctAns.checked == true){
@@ -97,3 +98,4 @@ function question10(){
         alert("Wrong ans")
     }
 }
+
