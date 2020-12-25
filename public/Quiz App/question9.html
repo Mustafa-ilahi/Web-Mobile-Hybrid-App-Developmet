@@ -13,6 +13,26 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Quiz App</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCnCR4RSc4M4eL__kdKFuxFuaQX207n08M",
+          authDomain: "quiz-app-a353a.firebaseapp.com",
+          projectId: "quiz-app-a353a",
+          storageBucket: "quiz-app-a353a.appspot.com",
+          messagingSenderId: "523957223762",
+          appId: "1:523957223762:web:23213215d0b99322e43a8b",
+          measurementId: "G-85VMKMG6D6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
 </head>
 <body>
     <div class="container-fluid">

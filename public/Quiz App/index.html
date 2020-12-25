@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Quiz App</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCnCR4RSc4M4eL__kdKFuxFuaQX207n08M",
+          authDomain: "quiz-app-a353a.firebaseapp.com",
+          projectId: "quiz-app-a353a",
+          storageBucket: "quiz-app-a353a.appspot.com",
+          messagingSenderId: "523957223762",
+          appId: "1:523957223762:web:23213215d0b99322e43a8b",
+          measurementId: "G-85VMKMG6D6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
 </head>
-<body>
-    <!-- <div class="container-fluid">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3>Q. What does CSS stands for?</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="col-xs-3 5"> </div>
-                    <div class="quiz" id="quiz" data-toggle="buttons"> <label class="element-animation1 btn btn-lg btn-danger btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1"> Computer Style Sheets</label> <label class="element-animation2 btn btn-lg btn-danger btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">Cascading Style Sheets</label> <label class="element-animation3 btn btn-lg btn-danger btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">Creative Style Sheets</label> <label class="element-animation4 btn btn-lg btn-danger btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4"> Colorful Style Sheets </label> </div>
-                    <button><a href="./question2.html">Next</a></button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <h1>Let's start the quiz</h1>
-    <button onclick="location.href='./question1.html'">Start</button>
+<body style="background-image: url(./images/bg-2.svg);">
+    <div class="modal-header">
+        <h1 style="text-align: center; color: white;">JavaScript Quiz 1</h1>
+    </div>
+    <h1 style="text-align: center; font-size: 55px; color: white;">Let's start the quiz</h1>
+    <br>
+    <br>
+    <button onclick="location.href='./question1.html'" id=start-btn>Start</button>
+    <br>
+    <br>
+    <br>
 </body>
 <script src="app.js"></script>
 </html>
