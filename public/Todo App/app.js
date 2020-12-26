@@ -1,21 +1,20 @@
 var list = document.getElementById("list");
-function addItems(){
-    // Adding items
-    var val = document.getElementById("input");
+
+firebase.database().ref('todos').on("child_added",function(data){
     var li = document.createElement("li");
-    var text = document.createTextNode(val.value);
+    var text = document.createTextNode(data.val().value);
     li.appendChild(text);
-    val.value = "";
+    
    
     // Create delete Button
     var delBtn = document.createElement("button");
     var text = document.createTextNode("DELETE");
     delBtn.appendChild(text);
-    delBtn.setAttribute("id","delBtn");
+    delBtn.setAttribute("id",data.val().key);
     delBtn.setAttribute("onclick","deleteItem(this)")
     li.appendChild(delBtn);
 
-    // Create insert Button
+    // // Create insert Button
     var editBtn = document.createElement("button");
     var text = document.createTextNode("EDIT");
     editBtn.appendChild(text);
@@ -24,9 +23,24 @@ function addItems(){
     li.appendChild(editBtn);
 
     list.appendChild(li);
+})
+
+function addItems(){
+    var todoItems = document.getElementById("input");
+    // console.log(todoItems.value);
+    var key = firebase.database().ref('todos').push().key;
+    // console.log(key);
+    var todos = {
+        value : todoItems.value,
+        key : key
+    }
+    todoItems.value = "";
+    firebase.database().ref('todos').child(key).set(todos);
 }
 
 function deleteItem(item){
+    // console.log(item.id);
+    firebase.database().ref('todos').child(item.id).remove();
     item.parentNode.remove();
 }
 
