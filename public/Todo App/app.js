@@ -18,7 +18,7 @@ firebase.database().ref('todos').on("child_added",function(data){
     var editBtn = document.createElement("button");
     var text = document.createTextNode("EDIT");
     editBtn.appendChild(text);
-    editBtn.setAttribute("id","editBtn");
+    editBtn.setAttribute("id",data.val().key);
     editBtn.setAttribute("onclick","editItem(this)");
     li.appendChild(editBtn);
 
@@ -45,11 +45,17 @@ function deleteItem(item){
 }
 
 function deleteAll(){
+    firebase.database().ref('todos').remove();
     list.innerHTML = "";
 }
 
 function editItem(item){
     var val = prompt("Enter updated value" , item.parentNode.firstChild.nodeValue);
+    var editTodo = {
+        value : val,
+        key : item.id
+    }
+    firebase.database().ref('todos').child(item.id).set(editTodo);
     item.parentNode.firstChild.nodeValue = val;
-    console.log(item.parentNode.firstChild);
+    // console.log(item.parentNode.firstChild);
 }
