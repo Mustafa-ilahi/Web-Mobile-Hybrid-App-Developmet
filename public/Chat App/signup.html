@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <form id="signUp">
+        <h1>Sign Up</h1>
+        <br>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstName"><b>First Name</b></label>
+            <input type="name" class="form-control" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="firstName"><b>Last Name</b></label>
+            <input type="name" class="form-control" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail"><b>Email</b></label>
+              <input type="email" class="form-control"  placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword"><b>Password</b></label>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+          </div>
+        <button class="btn btn-primary" onclick="signUp()">Sign Up</button>
+      </form>
+      
+</body>
+<script src="./app.js"></script>
+</html>
