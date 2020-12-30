@@ -6,6 +6,27 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyC0QOM9oB3aojBjYk3WKevSmDVg7o1kOz8",
+          authDomain: "chat-app-89eed.firebaseapp.com",
+          projectId: "chat-app-89eed",
+          storageBucket: "chat-app-89eed.appspot.com",
+          messagingSenderId: "1045513708785",
+          appId: "1:1045513708785:web:a20eebd8099638af1f7550",
+          measurementId: "G-HQ33X680QN"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
 </head>
 <body>
     <form id="signUp">
@@ -14,25 +35,25 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="firstName"><b>First Name</b></label>
-            <input type="name" class="form-control" placeholder="First Name">
+            <input type="name" class="form-control" placeholder="First Name" id="firstName" required>
           </div>
           <div class="form-group col-md-6">
             <label for="firstName"><b>Last Name</b></label>
-            <input type="name" class="form-control" placeholder="Last Name">
+            <input type="name" class="form-control" placeholder="Last Name" id="lastName" required>
           </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail"><b>Email</b></label>
-              <input type="email" class="form-control"  placeholder="Email">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword"><b>Password</b></label>
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
             </div>
           </div>
+        </form>
         <button class="btn btn-primary" onclick="signUp()">Sign Up</button>
-      </form>
       
 </body>
 <script src="./app.js"></script>
