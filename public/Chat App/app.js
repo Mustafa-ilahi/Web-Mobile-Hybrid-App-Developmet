@@ -16,22 +16,24 @@ let signUp = () => {
             let key = user.user.uid;
             // Adding Key on Firebase
             firebase.database().ref('users/').child(key).set(userName);
-            firebase.auth().onAuthStateChanged(function(user) {
-                if (user) {
-                    console.log(userName);
-                    console.log("key==>" + key);
-                    console.log("UID==>" + user.uid)
-                    
-                } else {
-                  console.log("nhh")
-                }
+            // firebase.auth().onAuthStateChanged(function(user) {
+            //     if (user) {
+            //         console.log(userName);
+            //         console.log("key==>" + key);
+            //         console.log("UID==>" + user.uid)
+            //       }
+            //       else {
+            //         console.log("something wrent wrong")
+            //       }
+            //     });
+                console.log("Successfully Sign Up");
+                swal({
+                  title: "Successfully Sign Up!",
+                  icon: "success",
+                }).then(function(){
+                  window.location.href = 'chat.html';
               });
-            console.log("Successfully Sign Up");
-            swal({
-                title: "Successfully Sign Up!",
-                icon: "success",
-            });
-
+            
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -42,7 +44,6 @@ let signUp = () => {
         icon: "error",
       });
   });
-
 }
 
 let login = () => {
@@ -56,10 +57,15 @@ let login = () => {
             if (user) {
                 console.log("Uid===>" + user.uid);
                 firebase.database().ref('users').on("child_added",function(data){
-                    console.log(data.val());
+                    // console.log(data.val().key);
+                    if(data.val().key == user.uid){
+                      console.log(data.val().Name);
+                      console.log(data.val().Last_Name);
+                      window.location = "chat.html";
+                    }
                 })
             } else {
-              console.log("nhh")
+              console.log("Unable to get")
             }
           });
 
@@ -79,13 +85,62 @@ let login = () => {
     });
 }
 
-// let namePrint = () => {
-//     firebase.database().ref('users').on("child_added",function(data){
-//         console.log(data.val());
-//         let main = document.getElementById("username");
-//         let li = document.createElement("list");
-//         let text = document.createTextNode("Mera naam");
-//         li.appendChild(text);
-//         main.appendChild(li);
-//     })
-// }
+let chatBox = () => {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        console.log("Uid===>" + user.uid);
+        firebase.database().ref('users').on("child_added",function(data){
+            // console.log(data.val().key);
+            if(data.val().key == user.uid){
+              console.log(data.val().Name);
+              console.log(data.val().Last_Name);
+              let main = document.getElementById("heading");
+              let h1 = document.createElement("h1");
+              let text = document.createTextNode("Welcome " + data.val().Name + " " +  data.val().Last_Name);
+              let logOut = document.createElement("button");
+              let btnText = document.createTextNode("Logout");
+              logOut.setAttribute("onclick","logOut()");
+              // logOut.setAttribute("class","logout")
+              logOut.appendChild(btnText);
+              h1.appendChild(text);
+              main.appendChild(h1);
+              main.appendChild(logOut).className="logout";
+              let allusersHeading = document.createElement("h2");
+              let allusersHeadingText = document.createTextNode("All users");
+              allusersHeading.appendChild(allusersHeadingText);
+              main.appendChild(allusersHeading)
+              firebase.database().ref('users').on("child_added",function(data){
+                if(data.val().key != user.uid){
+                  console.log("Other Users " +  data.val().Name);
+                  let allusers = document.getElementById("allusers");
+                  let userBtn = document.createElement("button");
+                  userBtn.setAttribute("onclick","showChatBox()");
+                  let users_text = document.createTextNode(data.val().Name);
+                  userBtn.appendChild(users_text);
+                  allusers.appendChild(userBtn).className="all_users";
+                }
+              });
+            }
+            
+        })
+    } else {
+      console.log("No user logged in")
+    }
+  });
+  
+}
+
+let logOut = () =>{
+  firebase.auth().signOut()
+  .then(function() {
+    console.log("Signout Successfully");
+    window.location = "index.html";
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+}
+
+let showChatBox = () =>{
+  alert("chlgyaaa")
+}
