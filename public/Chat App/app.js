@@ -9,8 +9,9 @@ let signUp = () => {
         firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
       .then((user) => {
             let userName = {
-                Name : firstName.value,
-                Last_Name : lastName.value
+                Name : firstName.value ,
+                Last_Name : lastName.value,
+                key : user.user.uid
             }
             let key = user.user.uid;
             // Adding Key on Firebase
@@ -18,6 +19,8 @@ let signUp = () => {
             firebase.auth().onAuthStateChanged(function(user) {
                 if (user) {
                     console.log(userName);
+                    console.log("key==>" + key);
+                    console.log("UID==>" + user.uid)
                     
                 } else {
                   console.log("nhh")
@@ -51,7 +54,7 @@ let login = () => {
         console.log(user);
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
-                console.log(user);
+                console.log("Uid===>" + user.uid);
                 firebase.database().ref('users').on("child_added",function(data){
                     console.log(data.val());
                 })

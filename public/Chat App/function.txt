@@ -1,0 +1,30 @@
+let chatDisplay = () =>
+{
+  var  keyUser = sessionStorage.getItem("key");
+  firebase.database().ref("chatter").on('child_added',(data)=>
+  {
+  
+  if (keyUser == data.val().key)
+  {
+   let nam = data.val().user_Name;
+   sessionStorage.setItem("name",nam);
+   var head = document.getElementById("heading");
+   var head_Text = document.createTextNode(nam);
+   head.appendChild(head_Text);
+   firebase.database().ref("chatter").on('child_added',(data)=>
+   {
+   var onlineUsers = document.getElementById("onlineUsers");
+   var div = document.createElement("div");
+   div.setAttribute("id",data.val().key);
+   div.setAttribute("class","usersDiv");
+   div.setAttribute("onclick","openChatBox()");
+   if(nam != data.val().user_Name)
+   {
+    var divText = document.createTextNode(data.val().user_Name);
+   }
+   div.appendChild(divText);
+   onlineUsers.appendChild(div);
+   });
+  }
+  });
+}
