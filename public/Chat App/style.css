@@ -47,3 +47,33 @@ button:hover{
     color:#fff;
     cursor: pointer;
 }
+
+#main-box{
+    font-size: 200px;
+    background-color: cadetblue;
+    margin-left: 336px;
+    width: 70%;
+    height: 500px;
+    margin-top: -251px;
+    border-radius: 2.1rem;
+}   
+
+#msg_input{
+    width: 85%;
+    border-radius: 2.1rem;
+    font-size: 22px;
+    text-align: justify;
+    font-family: serif;
+    margin-left: 52px;
+    margin-top: 465px;
+}
+#send-btn-img{
+    height: 33px;
+    width: 46px;
+    position: relative;
+    bottom: 35px;
+    left: 1254px;
+}
+#send-btn-img:hover{
+    cursor: pointer;
+}
