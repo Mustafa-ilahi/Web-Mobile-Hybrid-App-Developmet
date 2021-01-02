@@ -114,7 +114,7 @@ let chatBox = () => {
                   console.log("Other Users " +  data.val().Name);
                   let allusers = document.getElementById("allusers");
                   let userBtn = document.createElement("button");
-                  userBtn.setAttribute("onclick","showChatBox()");
+                  userBtn.setAttribute("onclick","showChatBox(this)");
                   let users_text = document.createTextNode(data.val().Name);
                   userBtn.appendChild(users_text);
                   allusers.appendChild(userBtn).className="all_users";
@@ -147,7 +147,11 @@ let logOut = () =>{
   });
 }
 
-let showChatBox = () =>{
+let showChatBox = (item) =>{
+  // console.log(item);
+  // firebase.database('users').on("child_added",function(){
+    
+  // })
   let chatDiv = document.getElementById("showChat");
   chatDiv.setAttribute("id","main-box");
   let chatInput = document.createElement("input");
