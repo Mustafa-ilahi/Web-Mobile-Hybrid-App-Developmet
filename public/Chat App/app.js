@@ -114,7 +114,7 @@ let chatBox = () => {
                   console.log("Other Users " +  data.val().Name);
                   let allusers = document.getElementById("allusers");
                   let userBtn = document.createElement("button");
-                  userBtn.setAttribute("onclick","showChatBox(this)");
+                  userBtn.setAttribute("onclick","senderBox(this)");
                   let users_text = document.createTextNode(data.val().Name);
                   userBtn.appendChild(users_text);
                   allusers.appendChild(userBtn).className="all_users";
@@ -138,7 +138,7 @@ let logOut = () =>{
       title: "Successfully LogOut!",
       icon: "success",
     }).then(function(){
-      window.location.href = 'chat.html';
+      window.location.href = 'index.html';
   });
 
   })
@@ -146,25 +146,37 @@ let logOut = () =>{
     console.log(error);
   });
 }
+let senderBox = (item) => {
+  firebase.database().ref('users').on("child_added",function(data){
+    // console.log(data.val().Name);
+    if(data.val().Name == item.innerHTML){
+      console.log(data.val().Name);
+      localStorage.setItem("name",item.innerHTML);
+    }
+  })
+};
 
-let showChatBox = (item) =>{
-  // console.log(item);
-  // firebase.database('users').on("child_added",function(){
-    
-  // })
-  let chatDiv = document.getElementById("showChat");
-  chatDiv.setAttribute("id","main-box");
+let showBox = () => {
+  console.log(localStorage.getItem("name"));
+  let name = localStorage.getItem("name")
+  let chatDiv = document.getElementById("main");
+  let heading = document.createElement("h3");
+  let text = document.createTextNode("To: " + name);
+  heading.appendChild(text);
+  chatDiv.appendChild(heading);
   let chatInput = document.createElement("input");
   chatInput.placeholder = "Write your message...";
   chatInput.setAttribute("id","msg_input");
-  let sendBtn = document.createElement("img");
-  sendBtn.setAttribute('src', './images/send-icon.png');
-  sendBtn.setAttribute('alt', 'na');
-  sendBtn.setAttribute('id','send-btn-img')
-  sendBtn.setAttribute("onclick","sendMsg()");
+  let sendBtn = document.createElement("button");
+  let btnText = document.createTextNode("Send");
+  sendBtn.appendChild(btnText);
+  sendBtn.setAttribute("class","btn btn-dark");
+  sendBtn.setAttribute("id","sendBtn")
+  chatInput.appendChild(sendBtn);
+
+  // sendBtn.appendChild(chatInput);
+  // sendBtn.setAttribute("onclick","sendMsg()");
+  // sendBtn.setAttribute("onclick","senderBox()");
   document.body.appendChild(sendBtn);
   chatDiv.appendChild(chatInput);
-}
-let sendMsg = () => {
-  alert("ok")
 }

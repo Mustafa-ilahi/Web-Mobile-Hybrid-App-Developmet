@@ -48,13 +48,14 @@ button:hover{
     cursor: pointer;
 }
 
-#main-box{
+.main-box{
     font-size: 200px;
+    text-align: center;
     background-color: cadetblue;
-    margin-left: 336px;
-    width: 70%;
+    margin-left: 288px;
+    width: 55%;
     height: 500px;
-    margin-top: -251px;
+    margin-top: 70px;
     border-radius: 2.1rem;
 }   
 
@@ -64,16 +65,29 @@ button:hover{
     font-size: 22px;
     text-align: justify;
     font-family: serif;
-    margin-left: 52px;
-    margin-top: 465px;
+    margin-left: 0px;
+    margin-top: 455px;
 }
-#send-btn-img{
+/* #send-btn-img{
     height: 33px;
     width: 46px;
     position: relative;
-    bottom: 35px;
-    left: 1254px;
+    bottom: 36px;
+    left: 1099px;
 }
 #send-btn-img:hover{
     cursor: pointer;
+} */
+
+#check{
+    background-color: red;
+}
+
+#main{
+    background-color: red;
+}
+
+#sendBtn{
+    position: relative;
+    bottom: 20px;
 }
