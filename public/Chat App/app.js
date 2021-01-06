@@ -228,6 +228,25 @@ let sendMsg = () => {
             }
           });
           
+          // firebase.database().ref(`users/`).on("child_added", function (data) {
+          //   var categories = data.val();
+          //   for (var userUid in categories) {
+          //       // console.log(userUid)
+          //       // console.log(userUid)
+          //       console.log(data.val().messages);
+          //       var messages = data.val().messages;
+          //     for(var userID in messages){
+          //       console.log("===>" + userID.msg);
+          //     }
+              //   var categoriesVal = categories[userUid]
+              //   console.log(categoriesVal);
+              //   for (var key in categoriesVal) {
+              //       if (key === userUid) {
+              //   }
+              // }
+      //     }
+      // }); 
+
       }
     })
 }
