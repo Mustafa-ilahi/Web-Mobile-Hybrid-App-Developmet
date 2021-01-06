@@ -219,9 +219,9 @@ let sendMsg = () => {
             }
             let msgKey = user.uid;
             firebase.database().ref('users').child(key).child('messages').child(msgKey).push(message);
-            if(data.val().messages !== user.uid){
-              console.log(data.val().msg);
-            }
+            // if(data.val().messages !== user.uid){
+            //   console.log(data.val().msg);
+            // }
           } 
           else {
               console.log("No user logged in")
