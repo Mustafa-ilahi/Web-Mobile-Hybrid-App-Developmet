@@ -16,16 +16,6 @@ let signUp = () => {
             let key = user.user.uid;
             // Adding Key on Firebase
             firebase.database().ref('users/').child(key).set(userName);
-            // firebase.auth().onAuthStateChanged(function(user) {
-            //     if (user) {
-            //         console.log(userName);
-            //         console.log("key==>" + key);
-            //         console.log("UID==>" + user.uid)
-            //       }
-            //       else {
-            //         console.log("something wrent wrong")
-            //       }
-            //     });
                 console.log("Successfully Sign Up");
                 swal({
                   title: "Successfully Sign Up!",
@@ -187,11 +177,13 @@ let sendMsg = () => {
   let input = document.getElementById("msg_input");
   console.log(input.value);
   let chatDiv = document.getElementById("main");
-  let msg = document.createElement("p");
-  msg.setAttribute("id","showMsg")
-  let msgText = document.createTextNode(input.value);
-  msg.appendChild(msgText);
-  chatDiv.appendChild(msg);
+  // let msg = document.createElement("p");
+  // msg.setAttribute("id","showMsg")
+  // let msgText = document.createTextNode(input.value);
+  // msg.appendChild(msgText);
+  // chatDiv.appendChild(msg);
+
+  
   // Check who is sending msg:
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
@@ -215,26 +207,27 @@ let sendMsg = () => {
         // console.log(data.val());
         let key = data.val().key;
         // console.log(key)
-        firebase.database().ref('users').child(key).child('message').push(input.value);
+        // firebase.database().ref('users').child(key).child('message').push(input.value);
         // console.log(data.val().message);
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
             console.log(user.uid);
             console.log(data.val().key)
-            firebase.database().ref('users').child(key).child('senderID').set(user.uid);
-            // if(user.uid == data.val().key){
-              // console.log(user.uid);
-              // console.log(data.val().key);
-              
-            // }
-            // firebase.database().ref('users').child(key).child('senderName').set(data.val().Name);
+            // firebase.database().ref('users').child(key).child('senderID').push(user.uid);
+            let message = {
+              msg : input.value
+            }
+            let msgKey = user.uid;
+            firebase.database().ref('users').child(key).child('messages').child(msgKey).push(message);
+            if(data.val().messages !== user.uid){
+              console.log(data.val().msg);
+            }
           } 
           else {
               console.log("No user logged in")
             }
           });
-
-
+          
       }
     })
 }
