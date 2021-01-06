@@ -60,34 +60,45 @@ button:hover{
 }   
 
 #msg_input{
-    width: 85%;
+    width: 38%;
     border-radius: 2.1rem;
-    font-size: 22px;
+    font-size: 23px;
     text-align: justify;
     font-family: serif;
-    margin-left: 0px;
-    margin-top: 455px;
-}
-/* #send-btn-img{
-    height: 33px;
-    width: 46px;
-    position: relative;
-    bottom: 36px;
-    left: 1099px;
-}
-#send-btn-img:hover{
-    cursor: pointer;
-} */
-
-#check{
-    background-color: red;
+    margin-left: 290px;
 }
 
 #main{
-    background-color: red;
+    background-color: lightcoral;
+    overflow-y: scroll;
+    height: 565px;
+    width: 440px;
+    border-radius: 21px;
 }
 
 #sendBtn{
+    border-radius: 41px;
+    width: 84px;
+    position: fixed;
+    bottom: 102px;
+    left: 644px;
+    height: 40px;
+}
+
+#showMsg{
     position: relative;
-    bottom: 20px;
+    list-style-type: square;
+    color: red;
+    top: 39px;
+}
+
+h3{
+    /* text-decoration: underline; */
+    border: 2px solid black;
+}
+
+li{
+    position: relative;
+    list-style-type: square;
+    bottom: 25px;
 }

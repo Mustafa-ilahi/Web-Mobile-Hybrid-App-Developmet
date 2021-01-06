@@ -118,6 +118,7 @@ let chatBox = () => {
                   let users_text = document.createTextNode(data.val().Name);
                   userBtn.appendChild(users_text);
                   allusers.appendChild(userBtn).className="all_users";
+
                 }
               });
             }
@@ -152,18 +153,22 @@ let senderBox = (item) => {
     if(data.val().Name == item.innerHTML){
       console.log(data.val().Name);
       localStorage.setItem("name",item.innerHTML);
+      window.location= "sender.html"
     }
   })
 };
 
 let showBox = () => {
-  console.log(localStorage.getItem("name"));
-  let name = localStorage.getItem("name")
+  // console.log(localStorage.getItem("name"));
+  let name = localStorage.getItem("name");
   let chatDiv = document.getElementById("main");
+  let space = document.createElement("br");
+  main.appendChild(space);
   let heading = document.createElement("h3");
   let text = document.createTextNode("To: " + name);
   heading.appendChild(text);
   chatDiv.appendChild(heading);
+  let input = document.getElementById("input");
   let chatInput = document.createElement("input");
   chatInput.placeholder = "Write your message...";
   chatInput.setAttribute("id","msg_input");
@@ -173,10 +178,63 @@ let showBox = () => {
   sendBtn.setAttribute("class","btn btn-dark");
   sendBtn.setAttribute("id","sendBtn")
   chatInput.appendChild(sendBtn);
-
-  // sendBtn.appendChild(chatInput);
-  // sendBtn.setAttribute("onclick","sendMsg()");
-  // sendBtn.setAttribute("onclick","senderBox()");
+  sendBtn.setAttribute("onclick","sendMsg()");
   document.body.appendChild(sendBtn);
-  chatDiv.appendChild(chatInput);
+  input.appendChild(chatInput);
+}
+
+let sendMsg = () => {
+  let input = document.getElementById("msg_input");
+  console.log(input.value);
+  let chatDiv = document.getElementById("main");
+  let msg = document.createElement("p");
+  msg.setAttribute("id","showMsg")
+  let msgText = document.createTextNode(input.value);
+  msg.appendChild(msgText);
+  chatDiv.appendChild(msg);
+  // Check who is sending msg:
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        firebase.database().ref('users').on("child_added",function(data){
+            if(data.val().key == user.uid){
+              let senderName = document.createElement("li");
+              let senderText = document.createTextNode(data.val().Name);
+              senderName.appendChild(senderText);
+              chatDiv.appendChild(senderName);
+              let key = data.val().key;
+              
+            }
+            
+          })
+      } else {
+        console.log("No user logged in")
+      }
+    });
+    firebase.database().ref('users').on("child_added",function(data){
+      if(localStorage.getItem("name") == data.val().Name){
+        // console.log(data.val());
+        let key = data.val().key;
+        // console.log(key)
+        firebase.database().ref('users').child(key).child('message').push(input.value);
+        // console.log(data.val().message);
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            console.log(user.uid);
+            console.log(data.val().key)
+            firebase.database().ref('users').child(key).child('senderID').set(user.uid);
+            // if(user.uid == data.val().key){
+              // console.log(user.uid);
+              // console.log(data.val().key);
+              
+            // }
+            // firebase.database().ref('users').child(key).child('senderName').set(data.val().Name);
+          } 
+          else {
+              console.log("No user logged in")
+            }
+          });
+
+
+      }
+    })
 }
